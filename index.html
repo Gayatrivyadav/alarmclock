@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>My Dream Alarm Clock</title>
+		<meta charset='UFT-8' name='viewport' content='width=device-width, initial=scale=1.0' >
+		<link rel='stylesheet' type='text/css' href='style.css'>
+	</head>
+	<body>
+    <div id="main">
+		<div id='clock-container'>
+			<h2 id='clock'></h2>
+		</div>
+
+		<div id='alrm-container'>
+			<h3>Set time</h3>
+				<label>
+					<div>
+					<select id='alarmhours' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmminutes' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmseconds' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+						<select id="ampm">
+							<option value="AM">am</option>
+							<option value="PM">pm</option>
+						</select>
+					</div>
+				</label>
+				</div>
+		</div>
+
+		<div id='button'>
+
+				<button  id='set' onClick='setAlarm()'>Set Alarm</button>
+
+				<button  id='clear' onClick='clearAlarm()'>Alarm clear</button>
+			</div>
+    </div>
+		<script type='text/javascript' src='script.js'></script>
+	</body>
+</html>
